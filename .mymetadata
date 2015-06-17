@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="yaya"
+  id="myeclipse.1432886660119"
+  context-root="/yaya"
+  j2ee-spec="6.0"
+  archive="yaya.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
