@@ -51,7 +51,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     </a>
                 </li>
                     <li class="c5">
-                        <a href="star.html">
+                        <a href="star.jsp">
                             Star
                             <br/>
                             <strong>丫雅之星</strong>

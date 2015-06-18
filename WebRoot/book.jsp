@@ -53,7 +53,7 @@ String path = request.getContextPath();
                     </a>
                 </li>
                     <li class="c5">
-                        <a href="star.html">
+                        <a href="star.jsp">
                             Star
                             <br/>
                             <strong>丫雅之星</strong>
@@ -112,54 +112,9 @@ String path = request.getContextPath();
                     <h3>好书推荐</h3>
 
                 </div>
-                <span style="color: #22a3ff;font-size: small">一，二年级：</span>　
+              
                 
-                <div class="section group staff">
-                    <div class="listview_1_of_2 images_1_of_2">
-                        <div class="listimg listimg_2_of_1">
-                            <img id="book" src="<s:property value="#session.beList.get(0).bookPic"/>" style="width: 120px;height:180px;">
-                        </div>
-                        <div class="txt_s list_2_of_1">
-                            <h3><s:property value="#session.beList.get(0).bookName" /> <s:property value="#session.beList.get(0).bookWriter" /></h3>
-                            <p><s:property value="#session.beList.get(0).bookContent"/></p>
-
-                        </div>
-                    </div>
-                    <div class="listview_1_of_2 images_1_of_2">
-                        <div class="listimg listimg_2_of_1">
-                            <img book src="＃">
-                        </div>
-                        <div class="txt_s list_2_of_1">
-                            <h3><s:property value="#session.beList.get(１).bookName" />　　（<s:property value="#session.beList.get(１).bookWriter" />）</h3>
-                            <p>简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
-
-                        </div>
-                    </div>
-                </div>
-                
-                    <span style="color: #22a3ff;font-size: small">三年级：</span>　<br/>
-                    <div class="section group staff">
-                    <div class="listview_1_of_2 images_1_of_2">
-                        <div class="listimg listimg_2_of_1">
-                            <img id="book" src="./images/001.jpg" style="width: 120px;height:180px;">
-                        </div>
-                        <div class="txt_s list_2_of_1">
-                            <h3><s:property value="#session.beList.get(0).bookName" />　　（<s:property value="#session.beList.get(0).bookWriter" />）</h3>
-                            <p>简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
-
-                        </div>
-                    </div>
-                    <div class="listview_1_of_2 images_1_of_2">
-                        <div class="listimg listimg_2_of_1">
-                            <img book src="＃">
-                        </div>
-                        <div class="txt_s list_2_of_1">
-                            <h3><s:property value="#session.beList.get(１).bookName" />　　（<s:property value="#session.beList.get(１).bookWriter" />）</h3>
-                            <p>简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
-
-                        </div>
-                    </div>
-                </div>
+                 
                 
 
          

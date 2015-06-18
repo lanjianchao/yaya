@@ -148,6 +148,8 @@ a:link,a:visited,a:active {text-decoration:none; }
 .txt_para{  float: right;  width: 64.333%;  }
 .txt_para p{  line-height:1.8em;  font-size:0.824em;  color: #32251B;  }
 .txt_para1 p{  line-height:1.8em;  font-size:0.824em;  color: #32251B; }
+/*好书推荐*/
+.book {}
 /*btn*/
 .btn{  display: inline-block;  margin: 2% 0;  }
 .btn a{  letter-spacing:1px;  font-family: 'Pompiere', cursive;  font-size:1.2em;  display: inline-block;  padding:4px;
