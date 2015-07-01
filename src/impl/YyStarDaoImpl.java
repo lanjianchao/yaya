@@ -81,6 +81,7 @@ public class YyStarDaoImpl implements YyStarDao {
 				yt.setYyType(rs.getString(5));
 				list.add(yt);
 			}
+			rs.close();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}finally{
@@ -133,7 +134,9 @@ public class YyStarDaoImpl implements YyStarDao {
 				ye.setYyName(rs.getString(2));
 				ye.setYyContent(rs.getString(3));
 				ye.setYyPic(rs.getString(4));
-				ye.setYyType(rs.getString(5));}
+				ye.setYyType(rs.getString(5));
+				}
+			rs.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

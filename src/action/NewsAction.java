@@ -69,14 +69,12 @@ public class NewsAction  extends ActionSupport implements SessionAware{
 	}
 	public String query()throws Exception{
 		ArrayList<NewsEntity>neList=ns.queryAllNews();
-		System.out.println(neList.get(0).getNewsDate()+"------------------------");
 		session.put("List", neList);
 		return SUCCESS;
 	}
 	public String queryBycondition()throws Exception{
 		int neId=Integer.parseInt(newsId);
 	NewsEntity ne=ns.queryNewsBycondition(neId);
-//		System.out.println(neId+"---------------"+ne.getNewsId()+"------"+ne.getNewsTheme()+"------"+ne.getNewsDate());
 		session.put("ne", ne);
 		return SUCCESS;
 	}
@@ -84,9 +82,7 @@ public class NewsAction  extends ActionSupport implements SessionAware{
 		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
 		Date newsDate=df.parse(df.format(new Date()));
 		ne.setNewsDate(newsDate);
-		//System.out.println(ne.getNewsId()+"                "+ne.getNewsTheme()+"             "+ne.getNewsContent()+"                    "+ne.getNewsDate());
 		boolean flag=ns.updateNews(ne);
-		System.out.println(flag);
 		if(flag){
 			return SUCCESS;
 		}else{
@@ -105,7 +101,6 @@ public class NewsAction  extends ActionSupport implements SessionAware{
 	public String list()throws Exception{
 		int neId=Integer.parseInt(newsId);
 	NewsEntity ne=ns.queryNewsBycondition(neId);
-		System.out.println(neId+"---------------"+ne.getNewsId()+"------"+ne.getNewsTheme()+"------"+ne.getNewsDate());
 		session.put("ne", ne);
 		return "list";
 	}

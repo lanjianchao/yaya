@@ -79,7 +79,6 @@ public class ActAction  extends ActionSupport implements SessionAware{
 	public String queryBycondition()throws Exception{
 		int aeId=Integer.parseInt(actId);
 		ActEntity ae=as.queryActBycondition(aeId);
-		System.out.println(ae.getActPic1());
 		session.put("ae", ae);
 		return SUCCESS;
 	}
@@ -106,7 +105,6 @@ public class ActAction  extends ActionSupport implements SessionAware{
 	public String listAct()throws Exception{
 		int aeId=Integer.parseInt(actId);
 		ActEntity ae=as.queryActBycondition(aeId);
-		System.out.println(ae.getActPic1());
 		session.put("ae", ae);
 		return "list";
 	}

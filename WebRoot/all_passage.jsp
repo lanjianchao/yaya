@@ -47,7 +47,7 @@ String path = request.getContextPath();
             <div class="nav">
                 <ul>
                     <li class="c6">
-                        <a href="baoming.html">
+                        <a href="baoming.jsp">
                             Contact
                             <br/>
                             <strong>我要报名</strong>
@@ -172,7 +172,7 @@ rs.absolute(posion);
 for(int i=1;i<=num;i++){ 
 %>
                             <li>
-                                <a href="#"><%=rs.getString(3)%> </a>
+                                 <a href="upMes.action?mesId=<%=rs.getString(1) %>"><%=rs.getString(3)%> </a>
                                 <span style="color:red;"><% 
 					SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");  
                     java.util.Date date=rs.getDate(5);  
@@ -227,13 +227,13 @@ catch(Exception e){e.printStackTrace(); }%>
                             </a>
                         </li>
                         <li >
-                            <a href="composition.html">
+                            <a href="composition.jsp">
                                 在线投稿
                             </a>
                         </li>
 
                         <li >
-                            <a href="book.jsp">
+                            <a href="qiantaiBook1.action">
                                 好书推荐
                             </a>
                         </li>

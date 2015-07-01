@@ -1,5 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-<%@ taglib uri="/struts-tags" prefix="s" %>
+
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -256,7 +256,58 @@ function list(idstr){
         </tr>
 
       </table>
-	
+      
+      
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" class="left-table03">
+          <tr>
+            <td height="29"><table width="85%" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="8%"><img name="img4" id="img4" src="../images/ico04.gif" width="8" height="11" /></td>
+                  <td width="92%"><a href="javascript:" target="mainFrame" class="left-font03" onClick="list('4');">报名管理</a></td>
+                </tr>
+            </table></td>
+          </tr>
+      </table>
+
+	  <table id="subtree4" style="DISPLAY: none" width="80%" border="0" align="center" cellpadding="0" cellspacing="0" class="left-table02">
+        <tr>
+          <td width="9%" height="20"><img id="xiaotu19" src="../images/ico06.gif" width="8" height="12" /></td>
+          <td width="91%"><a href="weinote.jsp" target="mainFrame" class="left-font03" onClick="tupian('19');">未查看的报名信息</a></td>
+        </tr>
+        <tr>
+          <td width="9%" height="20"><img id="xiaotu24" src="../images/ico06.gif" width="8" height="12" /></td>
+          <td width="91%"><a href="note.jsp" target="mainFrame" class="left-font03" onClick="tupian('24');">已查看的报名信息</a></td>
+        </tr>
+
+      </table>
+	  <!-- 管理系统结束-->
+	  
+
+
+	  <!-- 管理系统结束-->
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="left-table03">
+          <tr>
+            <td height="29"><table width="85%" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="8%"><img name="img6" id="img6" src="../images/ico04.gif" width="8" height="11" /></td>
+                  <td width="92%"><a href="javascript:" target="mainFrame" class="left-font03" onClick="list('6');">家长感言</a></td>
+                </tr>
+            </table></td>
+          </tr>
+      </table>
+
+	  <table id="subtree6" style="DISPLAY: none" width="80%" border="0" align="center" cellpadding="0" cellspacing="0" class="left-table02">
+        <tr>
+          <td width="9%" height="20"><img id="xiaotu5" src="../images/ico06.gif" width="8" height="12" /></td>
+          <td width="91%"><a href="weinote.jsp" target="mainFrame" class="left-font03" onClick="tupian('5');">未查看留言</a></td>
+        </tr>
+        <tr>
+          <td width="9%" height="20"><img id="xiaotu6" src="../images/ico06.gif" width="8" height="12" /></td>
+          <td width="91%"><a href="note.jsp" target="mainFrame" class="left-font03" onClick="tupian('6');">已查看留言</a></td>
+        </tr>
+
+      </table>
+     
 
 
 

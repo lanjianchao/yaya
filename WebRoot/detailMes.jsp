@@ -69,7 +69,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     </li>
 
                     <li class="c3">
-                        <a href="news.html">
+                        <a href="news.jsp">
                             Training
                             <br/>
                             <strong>丫雅培训</strong>
@@ -77,7 +77,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     </li>
 
                     <li class="c4">
-                        <a href="staff.html">
+                        <a href="staff.jsp">
                             Teacher
                             <br/>
                             <strong>教师风采</strong>
@@ -117,7 +117,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
       <h3 class="articletitle"  name="me.mesName"><s:property value="#session.me.mesName"/></h3>
       <div class="articleinfo" name="me.mesDate">来源：本站原创    		发布于：20<s:property value="#session.me.mesDate"/></div>
-      <div class="txtcontent" name="me.mesContent" ><s:property escape="false" value="#session.me.mesContent"/></div>
+      <div class="txtcontent" name="me.mesContent" ><p><s:property escape="false" value="#session.me.mesContent"/></p></div>
 
   </div>
      </div>

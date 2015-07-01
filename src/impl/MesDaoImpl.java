@@ -30,8 +30,7 @@ public class MesDaoImpl implements MesDao {
 			// util包时间转换为sql包时间
 			java.sql.Date tDate = new java.sql.Date(date.getTime()); 
 			pstme.setDate(4, tDate);
-			pstme.setString(5, me.getMesIsPass());
-			pstme.setString(6, me.getMesWriter());
+			pstme.setString(5, me.getMesWriter());
 			int i =pstme.executeUpdate();
 			if(i>0){
 				flag=true;
@@ -97,6 +96,7 @@ public class MesDaoImpl implements MesDao {
 				me.setMesWriter(rs.getString(7));
 				list.add(me);
 			}
+			rs.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -201,7 +201,7 @@ public class MesDaoImpl implements MesDao {
 				me.setMesIsPass(rs.getString(6));
 				me.setMesWriter(rs.getString(7));
 			}
-				
+				rs.close();
 			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -237,6 +237,7 @@ public class MesDaoImpl implements MesDao {
 				mt.setMesWriter(rs.getString(7));
 				list.add(mt);
 			}
+			rs.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

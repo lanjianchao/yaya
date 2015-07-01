@@ -67,7 +67,6 @@ public class EmployAction extends ActionSupport implements SessionAware{
 			str.append(employSub[i]+" ");
 		}
 		ee.setEmploySub(str.toString());
-		System.out.println(str);
 		boolean flag=es.addEmploy(ee);
 		if(flag){
 			return SUCCESS;
@@ -79,13 +78,11 @@ public class EmployAction extends ActionSupport implements SessionAware{
 		int neId=Integer.parseInt(employId);
 		EmployEntity ee=new EmployEntity();
 		ee=es.queryEmployBycondition(neId);
-		System.out.println(ee.getEmployId()+" "+ee.getEmployDate());
 		session.put("ee", ee);
 		return SUCCESS;
 	}
 	public String updatePass()throws Exception{
 		int neId=Integer.parseInt(employId);
-		System.out.println(neId);
 		boolean flag=es.updatePass(neId);
 		if(flag){
 			return SUCCESS;

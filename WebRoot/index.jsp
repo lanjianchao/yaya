@@ -48,8 +48,6 @@ String path = request.getContextPath();
 
     <a  target="_blank" href="http://www.baidu.com">客服二号：<img src="./images/qq.jpg" align="absmiddle"/></a>
     <a  target="_blank" href="http://www.baidu.com">客服三号：<img src="./images/qq.jpg" align="absmiddle"/></a>
-    <a  target="_blank" href="http://www.baidu.com">客服一号：<img src="./images/qq.jpg" align="absmiddle"/></a>
-    <a  target="_blank" href="http://www.baidu.com">客服二号：<img src="./images/qq.jpg" align="absmiddle"/></a>
 
 
 </div>
@@ -77,7 +75,7 @@ String path = request.getContextPath();
             <div class="nav">
                 <ul>
                     <li class="c6">
-                        <a href="baoming.html">
+                        <a href="baoming.jsp">
                             Contact
                             <br/>
                             <strong>我要报名</strong>
@@ -176,7 +174,7 @@ String path = request.getContextPath();
 
           <s:iterator value="#session.actIndex" id="ae">
                  <li>
-                     <a href="upAct.action?actId=<s:property value="#ae.actId"/>" ><s:property value="#ae.actTheme"/></a>
+                     <a href="actQuery.action?actId=<s:property value="#ae.actId"/>" ><s:property value="#ae.actTheme"/></a>
                      <span>20<s:property value="#ae.actDate"/></span>
                  </li>
                  </s:iterator>
@@ -219,11 +217,11 @@ String path = request.getContextPath();
      <div class="section group staff">
          <div class="listview_1_of_2 images_1_of_2">
              <div class="listimg listimg_2_of_1">
-                 <a href="details.html"><img src="./images/001.jpg"></a>
+                <img src="./images/huang1.jpg">
              </div>
              <div class="txt_s list_2_of_1">
-                 <h3>教师姓名</h3>
-                 <p>简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
+                 <h3>丫丫----黄老师</h3>
+                 <p>从事小学低中年级作文教学。是一位教学功底、亲和力、责任心和爱心兼备的老师......</p>
                  <div class="btn">
                      <a href="staff.jsp"> more <span>>></span></a>
                  </div>
@@ -231,13 +229,13 @@ String path = request.getContextPath();
          </div>
          <div class="listview_1_of_2 images_1_of_2">
              <div class="listimg listimg_2_of_1">
-                 <a href="staff.jsp"><img src="./images/002.jpg"></a>
+                <img src="./images/gao1.jpg">
              </div>
              <div class="txt_s list_2_of_1">
-                 <h3>教师姓名</h3>
-                 <p>简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
+                 <h3>丫丫----高老师</h3>
+                 <p>教学工作中认真备课，精心设计每一讲的作文内容，在课堂教学中根据学生学习的情况，即使反思并调整教学设计，尽量让学生发挥学习的自主性，让孩子们快乐学习并学有所获......</p>
                  <div class="btn">
-                     <a href="staff.html">more <span>>></span></a>
+                     <a href="staff.jsp">more <span>>></span></a>
                  </div>
              </div>
          </div>
@@ -267,7 +265,7 @@ String path = request.getContextPath();
 
 <div class="iright">
     <div class="inewsalbum">
-        <div class="top">家长感言</div>
+        <div class="top">家长感言<span style="float:right"><a href="Tanks.jsp">more>></a></span></div>
         <div class="list">
             <ul>
 

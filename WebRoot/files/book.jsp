@@ -111,7 +111,7 @@ function unselectAll(){
 					<td>一、二年级</td>
 					<td><s:property value="#session.beList.get(1).bookName" /></td>
 					<td><s:property value="#session.beList.get(1).bookWriter" /></td>
-                     <td><a href="updateBook.action?bookId=<s:property value="#session.beList.get(0).bookId" />">编辑|</a><a href="listBook.action?bookId=<s:property value="#session.beList.get(0).bookId" />">查看|</a>
+                     <td><a href="updateBook.action?bookId=<s:property value="#session.beList.get(1).bookId" />">编辑|</a><a href="listBook.action?bookId=<s:property value="#session.beList.get(1).bookId" />">查看|</a>
 					</td>
                   </tr>
                   <tr bgcolor="#FFFFFF">
@@ -119,7 +119,7 @@ function unselectAll(){
 					<td>三年级</td>
 					<td><s:property value="#session.beList.get(2).bookName" /></td>
 					<td><s:property value="#session.beList.get(2).bookWriter" /></td>
-                       <td><a href="updateBook.action?bookId=<s:property value="#session.beList.get(0).bookId" />">编辑|</a><a href="listBook.action?bookId=<s:property value="#session.beList.get(0).bookId" />">查看|</a>
+                       <td><a href="updateBook.action?bookId=<s:property value="#session.beList.get(2).bookId" />">编辑|</a><a href="listBook.action?bookId=<s:property value="#session.beList.get(2).bookId" />">查看|</a>
 					</td>
                   </tr>
                   <tr bgcolor="#FFFFFF">
@@ -127,7 +127,7 @@ function unselectAll(){
 					<td>三年级</td>
 					<td><s:property value="#session.beList.get(3).bookName" /></td>
 					<td><s:property value="#session.beList.get(3).bookWriter" /></td>
-                      <td><a href="updateBook.action?bookId=<s:property value="#session.beList.get(0).bookId" />">编辑|</a><a href="listBook.action?bookId=<s:property value="#session.beList.get(0).bookId" />">查看|</a>
+                      <td><a href="updateBook.action?bookId=<s:property value="#session.beList.get(3).bookId" />">编辑|</a><a href="listBook.action?bookId=<s:property value="#session.beList.get(3).bookId" />">查看|</a>
 					</td>
                   </tr>
                   <tr bgcolor="#FFFFFF">
@@ -135,7 +135,7 @@ function unselectAll(){
 					<td>四年级</td>
 					<td><s:property value="#session.beList.get(4).bookName" /></td>
 					<td><s:property value="#session.beList.get(4).bookWriter" /></td>
-                      <td><a href="updateBook.action?bookId=<s:property value="#session.beList.get(0).bookId" />">编辑|</a><a href="listBook.action?bookId=<s:property value="#session.beList.get(0).bookId" />">查看|</a>
+                      <td><a href="updateBook.action?bookId=<s:property value="#session.beList.get(4).bookId" />">编辑|</a><a href="listBook.action?bookId=<s:property value="#session.beList.get(4).bookId" />">查看|</a>
 					</td>
                   </tr>
                   <tr bgcolor="#FFFFFF">
@@ -143,7 +143,7 @@ function unselectAll(){
 					<td>四年级</td>
 					<td><s:property value="#session.beList.get(5).bookName" /></td>
 					<td><s:property value="#session.beList.get(5).bookWriter" /></td>
-                   <td><a href="updateBook.action?bookId=<s:property value="#session.beList.get(0).bookId" />">编辑|</a><a href="listBook.action?bookId=<s:property value="#session.beList.get(0).bookId" />">查看|</a>s
+                   <td><a href="updateBook.action?bookId=<s:property value="#session.beList.get(5).bookId" />">编辑|</a><a href="listBook.action?bookId=<s:property value="#session.beList.get(5).bookId" />">查看|</a>s
 					</td>
                   </tr>
                   <tr bgcolor="#FFFFFF">
@@ -151,7 +151,7 @@ function unselectAll(){
 					<td>五年级</td>
 					<td><s:property value="#session.beList.get(6).bookName" /></td>
 					<td><s:property value="#session.beList.get(6).bookWriter" /></td>
-                     <td><a href="updateBook.action?bookId=<s:property value="#session.beList.get(0).bookId" />">编辑|</a><a href="listBook.action?bookId=<s:property value="#session.beList.get(0).bookId" />">查看|</a>
+                     <td><a href="updateBook.action?bookId=<s:property value="#session.beList.get(6).bookId" />">编辑|</a><a href="listBook.action?bookId=<s:property value="#session.beList.get(6).bookId" />">查看|</a>
 					</td>
                   </tr>
                   <tr bgcolor="#FFFFFF">
@@ -159,7 +159,7 @@ function unselectAll(){
 					<td>五年级</td>
 					<td><s:property value="#session.beList.get(7).bookName" /></td>
 					<td><s:property value="#session.beList.get(7).bookWriter" /></td>
-                   <td><a href="updateBook.action?bookId=<s:property value="#session.beList.get(0).bookId" />">编辑|</a><a href="listBook.action?bookId=<s:property value="#session.beList.get(0).bookId" />">查看|</a>
+                   <td><a href="updateBook.action?bookId=<s:property value="#session.beList.get(7).bookId" />">编辑|</a><a href="listBook.action?bookId=<s:property value="#session.beList.get(7).bookId" />">查看|</a>
 					</td>
                   </tr>
                   <tr bgcolor="#FFFFFF">
@@ -167,7 +167,7 @@ function unselectAll(){
 					<td>六年级</td>
 				<td><s:property value="#session.beList.get(8).bookName" /></td>
 					<td><s:property value="#session.beList.get(8).bookWriter" /></td>
-                      <td><a href="updateBook.action?bookId=<s:property value="#session.beList.get(0).bookId" />">编辑|</a><a href="listBook.action?bookId=<s:property value="#session.beList.get(0).bookId" />">查看|</a>
+                      <td><a href="updateBook.action?bookId=<s:property value="#session.beList.get(8).bookId" />">编辑|</a><a href="listBook.action?bookId=<s:property value="#session.beList.get(8).bookId" />">查看|</a>
 					</td>
                   </tr>
                   <tr bgcolor="#FFFFFF">
@@ -175,7 +175,7 @@ function unselectAll(){
 					<td>六年级</td>
 					<td><s:property value="#session.beList.get(9).bookName" /></td>
 					<td><s:property value="#session.beList.get(9).bookWriter" /></td>
-                    <td><a href="updateBook.action?bookId=<s:property value="#session.beList.get(0).bookId" />">编辑|</a><a href="listBook.action?bookId=<s:property value="#session.beList.get(0).bookId" />">查看|</a>
+                    <td><a href="updateBook.action?bookId=<s:property value="#session.beList.get(9).bookId" />">编辑|</a><a href="listBook.action?bookId=<s:property value="#session.beList.get(9).bookId" />">查看|</a>
 					</td>
                   </tr>
             </table></td>

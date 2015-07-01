@@ -63,7 +63,7 @@ public class NoteDaoImpl implements NoteDao{
 				Date newsDate=rs.getDate(6);
 				nt.setNoteDate(newsDate);
 			}
-				
+			rs.close();
 			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

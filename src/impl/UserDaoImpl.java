@@ -28,6 +28,7 @@ public class UserDaoImpl implements UserDao{
 				se.setUserId(rs.getString(1));
 				se.setUserPassword(rs.getString(2));
 			}
+			rs.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -41,11 +42,4 @@ public class UserDaoImpl implements UserDao{
 		}
 		return se;
 	}
-//	public static void main(String[] args) {
-//		String Id="001";
-//		String pw="123";
-//		UserDaoImpl ui=new UserDaoImpl();
-//		UserEntity ue=ui.loginUser(Id, pw);
-//		System.out.println(ue.getUserPassword());
-//	}
 }

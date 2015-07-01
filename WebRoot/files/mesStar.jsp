@@ -108,7 +108,7 @@ function unselectAll(){
 					<th  align="center">操作</th>
 					</tr>
 					
-						<%! int pageSize=4;
+						<%! int pageSize=10;
 					int num=pageSize;//实际每页的数目
 int pageCount;
 int showPage;

@@ -45,7 +45,7 @@
             <div class="nav">
                 <ul>
                     <li class="c6">
-                        <a href="baoming.html">
+                        <a href="baoming.jsp">
                             Contact
                             <br/>
                             <strong>我要报名</strong>
@@ -162,7 +162,6 @@ showPage=pageCount;
 int posion=(showPage-1)*pageSize*2+1;
 //设置游标的位置
 rs.absolute(posion);
-System.out.println("游标位置："+posion);
  
  if(showPage*pageSize*2>recordCount)   {num=((pageSize*2-(showPage*pageSize*2-recordCount))%2)==0?((pageSize*2-(showPage*pageSize*2-recordCount))/2):((pageSize*2-(showPage*pageSize*2-recordCount))/2+1); }
 System.out.println(recordCount+"----------------"+num+"--------------"+showPage);

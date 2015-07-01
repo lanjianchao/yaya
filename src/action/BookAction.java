@@ -56,7 +56,6 @@ public class BookAction extends ActionSupport implements SessionAware{
 	}
 	public String execute() throws Exception {
 		beList=bs.queryAllBook();
-		System.out.println(beList.size()+"---");
 		if(beList != null){
 			session.put("beList", beList);
 			return SUCCESS;

@@ -48,7 +48,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <div class="nav">
                 <ul>
                     <li class="c6">
-                        <a href="baoming.html">
+                        <a href="baoming.jsp">
                             Contact
                             <br/>
                             <strong>我要报名</strong>

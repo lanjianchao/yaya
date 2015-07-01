@@ -69,7 +69,7 @@ public class ApplyDaoImpl implements ApplyDao {
 				at.setApplyDate(applyDate);
 				at.setApplyIsPass(rs.getString(10));
 			}
-				
+				rs.close();
 			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

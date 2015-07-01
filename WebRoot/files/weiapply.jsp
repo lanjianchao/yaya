@@ -110,7 +110,7 @@ function unselectAll(){
 					<th >操作</th>
 					</tr>
 					
-						<%! int pageSize=4;
+						<%! int pageSize=10;
 					int num=pageSize;//实际每页的数目
 int pageCount;
 int showPage;
@@ -175,8 +175,8 @@ for(int i=1;i<=num;i++){
                     java.util.Date date=rs.getDate(9);  
                 %>  
 		<%=date %></td>
-                    <td><a href="editApply.action?employId=<%=rs.getInt(1) %>">查看|</a>
-					<a href="deleteApply.action?employId=<%=rs.getInt(1) %>">删除 |</a><a href="#?employId=<%=rs.getInt(1) %>">添加到已查看</a></td>
+                    <td><a href="editApply.action?applyId=<%=rs.getInt(1) %>">查看|</a>
+					<a href="deleteApply.action?applyId=<%=rs.getInt(1) %>">删除 |</a><a href="updateApplyPass.action?applyId=<%=rs.getInt(1) %>">添加到已查看</a></td>
                   </tr>
                    	
                   	<%rs.next();

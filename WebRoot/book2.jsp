@@ -46,14 +46,14 @@ String path = request.getContextPath();
         <div class="nav">
             <ul>
                 <li class="c6">
-                    <a href="baoming.html">
+                    <a href="baoming.jsp">
                         Contact
                         <br/>
                         <strong>我要报名</strong>
                     </a>
                 </li>
                     <li class="c5">
-                        <a href="star.html">
+                        <a href="star.jsp">
                             Star
                             <br/>
                             <strong>丫雅之星</strong>
@@ -111,78 +111,53 @@ String path = request.getContextPath();
                     <h3>好书推荐</h3>
 
                 </div>
-                <span style="color: #22a3ff;font-size: small">四年级：</span>　
-                
-                <div class="section group staff">
-                    <div class="listview_1_of_2 images_1_of_2">
-                        <div class="listimg listimg_2_of_1">
-                            <img id="book" src="./images/001.jpg" style="width: 120px;height:180px;">
+            <span style="color: #22a3ff;font-size: small">五年级：</span>　
+                  <div class="book">
+                        <div class="book_image">
+                              <img src="<s:property value="#session.beList.get(6).bookPic" /> ">
                         </div>
-                        <div class="txt_s list_2_of_1">
-                            <h3><s:property value="#session.beList.get(0).bookName" />　　（<s:property value="#session.beList.get(0).bookWriter" />）</h3>
-                            <p>简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
+                        <div class="txt_s">
+                            <center> <h3><s:property value="#session.beList.get(6).bookName" />　　（<s:property value="#session.beList.get(6).bookWriter" />）</h3></center>
+                            <p><s:property value="#session.beList.get(6).bookContent" />　</p>
 
                         </div>
                     </div>
-                    <div class="listview_1_of_2 images_1_of_2">
-                        <div class="listimg listimg_2_of_1">
-                            <img book src="＃">
+                         <div class="clear"></div>
+                    <div class="book">
+                        <div class="book_image">
+                             <img src="<s:property value="#session.beList.get(7).bookPic" /> ">
                         </div>
-                        <div class="txt_s list_2_of_1">
-                            <h3><s:property value="#session.beList.get(１).bookName" />　　（<s:property value="#session.beList.get(１).bookWriter" />）</h3>
-                            <p>简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
+                        <div class="txt_s">
+                            <center> <h3><s:property value="#session.beList.get(7).bookName" />　　（<s:property value="#session.beList.get(7).bookWriter" />）</h3></center>
+                            <p><s:property value="#session.beList.get(7).bookContent" />　</p>
 
                         </div>
                     </div>
-                </div>
-                
-                    <span style="color: #22a3ff;font-size: small">五年级：</span>　<br/>
-                    <div class="section group staff">
-                    <div class="listview_1_of_2 images_1_of_2">
-                        <div class="listimg listimg_2_of_1">
-                            <img id="book" src="./images/001.jpg" style="width: 120px;height:180px;">
+                         <div class="clear"></div>
+                    
+                     <span style="color: #22a3ff;font-size: small">六年级：</span>　
+                  <div class="book">
+                        <div class="book_image">
+                              <img src="<s:property value="#session.beList.get(8).bookPic" /> ">
                         </div>
-                        <div class="txt_s list_2_of_1">
-                            <h3><s:property value="#session.beList.get(0).bookName" />　　（<s:property value="#session.beList.get(0).bookWriter" />）</h3>
-                            <p>简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
+                        <div class="txt_s">
+                            <center> <h3><s:property value="#session.beList.get(8).bookName" />　　（<s:property value="#session.beList.get(8).bookWriter" />）</h3></center>
+                            <p><s:property value="#session.beList.get(8).bookContent" />　</p>
 
                         </div>
                     </div>
-                    <div class="listview_1_of_2 images_1_of_2">
-                        <div class="listimg listimg_2_of_1">
-                            <img book src="＃">
+                         <div class="clear"></div>
+                    <div class="book">
+                        <div class="book_image">
+                             <img src="<s:property value="#session.beList.get(9).bookPic" /> ">
                         </div>
-                        <div class="txt_s list_2_of_1">
-                            <h3><s:property value="#session.beList.get(１).bookName" />　　（<s:property value="#session.beList.get(１).bookWriter" />）</h3>
-                            <p>简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
+                        <div class="txt_s">
+                            <center> <h3><s:property value="#session.beList.get(9).bookName" />　　（<s:property value="#session.beList.get(9).bookWriter" />）</h3></center>
+                            <p><s:property value="#session.beList.get(9).bookContent" />　</p>
 
                         </div>
                     </div>
-                </div>
-                <span style="color: #22a3ff;font-size: small">六年级：</span>　<br/>
-                    <div class="section group staff">
-                    <div class="listview_1_of_2 images_1_of_2">
-                        <div class="listimg listimg_2_of_1">
-                            <img id="book" src="./images/001.jpg" style="width: 120px;height:180px;">
-                        </div>
-                        <div class="txt_s list_2_of_1">
-                            <h3><s:property value="#session.beList.get(0).bookName" />　　（<s:property value="#session.beList.get(0).bookWriter" />）</h3>
-                            <p>简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
-
-                        </div>
-                    </div>
-                    <div class="listview_1_of_2 images_1_of_2">
-                        <div class="listimg listimg_2_of_1">
-                            <img book src="＃">
-                        </div>
-                        <div class="txt_s list_2_of_1">
-                            <h3><s:property value="#session.beList.get(１).bookName" />　　（<s:property value="#session.beList.get(１).bookWriter" />）</h3>
-                            <p>简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
-
-                        </div>
-                    </div>
-                </div>
-  
+                         <div class="clear"></div>
         
                <div id="fenye" class="plist" style="margin-top:6px;text-align:right;">
                     共２页 | 第１页
@@ -197,34 +172,34 @@ String path = request.getContextPath();
                 <div class="lan">
                     <ul>
                         <li>
-                            <a href="all_passage.html">
+                            <a href="all_passage.jsp">
                                 全部作品
                             </a>
                         </li>
 
                         <li >
-                            <a href="good_passage.html">
+                            <a href="good_passage.jsp">
                                 优秀作品
                             </a>
                         </li>
                         <li >
-                            <a href="prize_passage.html">
+                            <a href="prize_passage.jsp">
                                 获奖作品
                             </a>
                         </li>
                         <li >
-                            <a href="public_passage.html">
+                            <a href="public_passage.jsp">
                                 已发表作品
                             </a>
                         </li>
                         <li >
-                            <a href="composition.html">
+                            <a href="composition.jsp">
                                 在线投稿
                             </a>
                         </li>
 
                         <li  class="curr">
-                            <a href="book.html">
+                            <a href="qiantaiBook1.action">
                                 好书推荐
                             </a>
                         </li>

@@ -63,6 +63,14 @@
 			<result name="success"  type="redirectAction">book</result>
 			<result name="fail">/files/mainfra.html</result>
 		</action>
+		<action name="qiantaiBook1" class="action.BookAction" method="execute">
+			<result name ="success" type="redirect">/book.jsp</result>
+			<result name="fail" type="redirect">/files/mainfra.html</result>
+		</action>
+		<action name="qiantaiBook2" class="action.BookAction" method="execute">
+			<result name ="success" type="redirect">/book2.jsp</result>
+			<result name="fail" type="redirect">/files/mainfra.html</result>
+		</action>
 		<action name="yystar" class="action.YyStarAction" method="add">
 			<result name="zuowen" type="redirect">/files/mesStar.jsp</result>
 			<result name="math" type="redirect">/files/mathStar.jsp</result>
@@ -80,6 +88,10 @@
 			<result name="zuowen" type="redirect">/files/mesStar.jsp</result>
 			<result name="math" type="redirect">/files/mathStar.jsp</result>
 			<result name="fail">/files/mainfra.html</result>
+		</action>
+		<action name="addMes" class="action.MesAction" method="addMes">
+			<result name="laigao"  type="redirect">/success.jsp</result>
+			<result name="fail" type="redirect">/index.jsp</result>
 		</action>
 		<action name="zuowen" class="action.MesAction" method="addBGMes">
 			<result name="putong" type="redirect">/files/listall.jsp</result>
@@ -116,6 +128,9 @@
 		<action name="upAct" class="action.upAction" method="upActQuery">
 			<result name="success" type="redirect">/activity.jsp</result>
 		</action>
+		<action name="actQuery" class="action.ActAction" method="queryBycondition">
+			<result name="success" type="redirect">/actdetail.jsp</result>
+		</action>
 		<action name="upMes" class="action.upAction" method="upMesQuery">
 			<result name="success" type="redirect">/detailMes.jsp</result>
 		</action>
@@ -139,23 +154,23 @@
 			<result name="fail" type="redirect">/files/mainfra.html</result>
 		</action>
 			<action name="addApply" class="action.ApplyAction" method="execute">
-			<result name="success" type="redirect">/index.jsp</result>
+			<result name="success" type="redirect">/success.jsp</result>
 			<result name="fail" type="redirect">/index.jsp</result>
 		</action>
 		<action name="editApply" class="action.ApplyAction" method="queryApply">
-			<result name="success" type="redirect">/files/notemingxi.jsp</result>
+			<result name="success" type="redirect">/files/applymingxi.jsp</result>
 		</action>
 		<action name="updateApplyPass" class="action.ApplyAction" method="updatePass">
 			<result name="success" type="redirect">/files/note.jsp</result>
 			<result name="fail" type="redirect">/files/mainfra.html</result>
 		</action>
-		<action name="deleteApply" class="action.NoteAction" method="deleteApply">
+		<action name="deleteApply" class="action.ApplyAction" method="deleteApply">
 			<result name="unpass"  type="redirect">/files/weinote.jsp</result>
 			<result name="pass" type="redirect">/files/note.jsp</result>
 			<result name="fail" type="redirect">/files/mainfra.html</result>
 		</action>
 		<action name="addEmploy" class="action.EmployAction" method ="execute">
-			<result name="success" type="redirectAction">indexQuery</result>
+			<result name="success" type="redirect">/success.jsp</result>
 			<result name="fail" type="redirect">/index.jsp</result>
 		</action>
 		<action name="editEmploy" class="action.EmployAction" method="queryEmploy">
@@ -168,6 +183,10 @@
 		<action name="deleteEmploy" class="action.EmployAction" method="deleteEmploy">
 			<result name="unpass"  type="redirect">/files/weiemployee.jsp</result>
 			<result name="pass" type="redirect">/files/employee.jsp</result>
+			<result name="fail" type="redirect">/files/mainfra.html</result>
+		</action>
+		<action name="addParent" class="action.ParentAction" method="execute">
+			<result name="success" type="redirect">/files/listTanks.jsp</result>
 			<result name="fail" type="redirect">/files/mainfra.html</result>
 		</action>
 		</package>

@@ -131,7 +131,7 @@ function link(){
                     </tr>
                     <tr>
 				    <td align="right" bgcolor="#FFFFFF" height="80">作文内容:</td>
-                    <td bgcolor="#FFFFFF"><textarea cols="80" id="editor1" name="me.mesContent" rows="20" style="width:100%" readonly="true"><s:property value="#session.me.mesContent"/></textarea></td>
+                    <td bgcolor="#FFFFFF"><textarea cols="80" id="editor1" name="me.mesContent" rows="20" style="width:100%" readonly="true"><s:property escape="false"  value="#session.me.mesContent"/></textarea></td>
                     </tr>
                 </table></td>
               </tr>

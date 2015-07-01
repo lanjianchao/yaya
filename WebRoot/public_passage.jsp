@@ -47,7 +47,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <div class="nav">
                 <ul>
                     <li class="c6">
-                        <a href="baoming.html">
+                        <a href="baoming.jsp">
                             Contact
                             <br/>
                             <strong>我要报名</strong>
@@ -135,7 +135,7 @@ try{Class.forName("com.mysql.jdbc.Driver");
 try{con=DriverManager.getConnection("jdbc:mysql://localhost:3306/yaya" ,"root","123456");
 sql=con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,ResultSet.CONCUR_READ_ONLY);
 //返回可滚动的结果集 
-rs=sql.executeQuery("select * from Message where mesIsPass='已发表'' order by mesId desc");
+rs=sql.executeQuery("select * from Message where mesIsPass='已发表' order by mesId desc");
 //将游标移到最后一行 
 rs.last();
 //获取最后一行的行号 
@@ -170,7 +170,7 @@ rs.absolute(posion);
  if(showPage*pageSize>recordCount)   num=pageSize-(showPage*pageSize-recordCount);
 for(int i=1;i<=num;i++){ 
 %>    <li>
-                                <a href="#"><%=rs.getString(3)%> </a>
+                                <a href="upMes.action?mesId=<%=rs.getString(1) %>"><%=rs.getString(3)%> </a>
                                 <span style="color:red;"><% 
 					SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");  
                     java.util.Date date=rs.getDate(5);  
@@ -224,13 +224,13 @@ catch(Exception e){e.printStackTrace(); }%>
                             </a>
                         </li>
                         <li >
-                            <a href="composition.html">
+                            <a href="composition.jsp">
                                 在线投稿
                             </a>
                         </li>
 
                         <li >
-                            <a href="book.jsp">
+                            <a href="qiantaiBook1.action">
                                 好书推荐
                             </a>
                         </li>

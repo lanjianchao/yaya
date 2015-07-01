@@ -21,17 +21,30 @@ public class ApplyAction extends ActionSupport implements SessionAware{
 	ApplyEntity ae=new ApplyEntity();
 	ApplyService  as=new ApplyService();
 	String applyId;
+	String applySub[];
+	public ApplyEntity getAe() {
+		return ae;
+	}
+	public ApplyService getAs() {
+		return as;
+	}
+	public String[] getApplySub() {
+		return applySub;
+	}
+	public void setAe(ApplyEntity ae) {
+		this.ae = ae;
+	}
+	public void setAs(ApplyService as) {
+		this.as = as;
+	}
+	public void setApplySub(String[] applySub) {
+		this.applySub = applySub;
+	}
 	public ActionContext getContext() {
 		return context;
 	}
 	public Map getSession() {
 		return session;
-	}
-	public ApplyEntity getNe() {
-		return ae;
-	}
-	public ApplyService getNs() {
-		return as;
 	}
 	public String getApplyId() {
 		return applyId;
@@ -56,9 +69,14 @@ public class ApplyAction extends ActionSupport implements SessionAware{
 		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
 		Date applyDate=df.parse(df.format(new Date()));
 		ae.setApplyDate(applyDate);
+		StringBuffer str=new StringBuffer();
+		for(int i=0;i<applySub.length;i++){
+			str.append(applySub[i]+" ");
+		}
+		ae.setApplySub(str.toString());
 		boolean flag=as.addApply(ae);
 		if(flag){
-			return SUCCESS; 
+			return SUCCESS;
 		}else{
 			return "fail";
 		}

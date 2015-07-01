@@ -1,4 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ taglib uri="/struts-tags" prefix="s" %>
 <%
 String path = request.getContextPath();
 %>
@@ -98,36 +99,36 @@ function link(){
                     </tr>
                   <tr>
 				    <td width="15%" height="20" align="right" bgcolor="#FFFFFF">报名者:</td>
-                    <td width="85%" align="left" bgcolor="#FFFFFF">试试ssssss</td>
+                  <td width="85%" align="left" bgcolor="#FFFFFF"><input type="text" name="ae.applyName"  readonly="true" value="<s:property value="#session.ae.applyName"/>"></td>
                     </tr>
                      <tr>
 				    <td width="15%" height="20" align="right" bgcolor="#FFFFFF">性别:</td>
-                    <td width="85%" align="left" bgcolor="#FFFFFF">男</td>
+                    <td width="85%" align="left" bgcolor="#FFFFFF"><input type="text" name="ae.applySex"  readonly="true" value="<s:property value="#session.ae.applySex"/>"></td>
                     </tr>
                     <tr>
 				    <td width="15%" height="20" align="right" bgcolor="#FFFFFF">联系方式:</td>
-                    <td width="85%" align="left" bgcolor="#FFFFFF">王晨</td>
+                    <td width="85%" align="left" bgcolor="#FFFFFF"><input type="text" name="ae.applyPhone"  readonly="true" value="<s:property value="#session.ae.applyPhone"/>"></td>
                     </tr>
                     <tr>
 				    <td width="15%" height="20" align="right" bgcolor="#FFFFFF">学校:</td>
-                    <td width="85%" align="left" bgcolor="#FFFFFF">五年级</td>
+                    <td width="85%" align="left" bgcolor="#FFFFFF"><input type="text" name="ae.applySchool"  readonly="true" value="<s:property value="#session.ae.applySchool"/>"></td>
                     </tr>
                     <tr>
 				    <td width="15%" height="20" align="right" bgcolor="#FFFFFF">年级:</td>
-                    <td width="85%" align="left" bgcolor="#FFFFFF">来稿</td>
+                    <td width="85%" align="left" bgcolor="#FFFFFF"><input type="text" name="ae.applyGrade"  readonly="true" value="<s:property value="#session.ae.applyGrade"/>"></td>
                     </tr>
                     <tr>
 				    <td width="15%" height="20" align="right" bgcolor="#FFFFFF">科目:</td>
-                    <td width="85%" align="left" bgcolor="#FFFFFF">来稿</td>
+                    <td width="85%" align="left" bgcolor="#FFFFFF"><input type="text" name="ae.applySub"  readonly="true" value="<s:property value="#session.ae.applySub"/>"></td>
                     </tr>
                     <tr>
 				    <td width="15%" height="20" align="right" bgcolor="#FFFFFF">时间:</td>
-                    <td width="85%" align="left" bgcolor="#FFFFFF">2015-05-30</td>
+                    <td width="85%" align="left" bgcolor="#FFFFFF"><input type="text" name="ae.applyDate"  readonly="true" value="<s:property value="#session.ae.applyDate"/>"></td>
                     </tr>
 					
                     <tr>
 				    <td align="right" bgcolor="#FFFFFF" height="80">备注内容:</td>
-                    <td bgcolor="#FFFFFF"><textarea cols="80" id="editor1" name="detail" rows="20" style="width:100%"></textarea></td>
+                    <td bgcolor="#FFFFFF"><textarea cols="80" id="editor1" name="ae.applyContent" rows="20" style="width:100%" readonly="true"><s:property value="#session.ae.applyContent"/></textarea></td>
                     </tr>
                 </table></td>
               </tr>

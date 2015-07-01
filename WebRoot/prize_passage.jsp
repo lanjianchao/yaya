@@ -48,7 +48,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <div class="nav">
                 <ul>
                     <li class="c6">
-                        <a href="baoming.html">
+                        <a href="baoming.jsp">
                             Contact
                             <br/>
                             <strong>我要报名</strong>
@@ -70,7 +70,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     </li>
 
                     <li class="c3">
-                        <a href="news.html">
+                        <a href="news.jsp">
                             Training
                             <br/>
                             <strong>丫雅培训</strong>
@@ -78,7 +78,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     </li>
 
                     <li class="c4">
-                        <a href="staff.html">
+                        <a href="staff.jsp">
                             Teacher
                             <br/>
                             <strong>教师风采</strong>
@@ -172,7 +172,7 @@ rs.absolute(posion);
  if(showPage*pageSize>recordCount)   num=pageSize-(showPage*pageSize-recordCount);
 for(int i=1;i<=num;i++){ 
 %>     <li>
-                                <a href="#"><%=rs.getString(3)%> </a>
+                                <a href="upMes.action?mesId=<%=rs.getString(1) %>"><%=rs.getString(3)%> </a>
                                 <span style="color:red;"><% 
 					SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");  
                     java.util.Date date=rs.getDate(5);  
@@ -227,7 +227,7 @@ catch(Exception e){e.printStackTrace(); }%>
                             </a>
                         </li>
                         <li >
-                            <a href="composition.html">
+                            <a href="composition.jsp">
                                 在线投稿
                             </a>
                         </li>

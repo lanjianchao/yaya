@@ -67,7 +67,7 @@ public class EmployDaoImpl implements EmployDao {
 				Date employDate=rs.getDate(9);
 				et.setEmployDate(employDate);
 			}
-				
+				rs.close();
 			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

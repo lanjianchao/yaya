@@ -59,7 +59,6 @@ public class MesAction extends ActionSupport implements SessionAware{
 		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
 		Date mesDate=df.parse(df.format(new Date()));
 		me.setMesDate(mesDate);
-		System.out.println(me.getMesName()+"----"+me.getMesIsPass()+"------"+me.getMesGrade());
 		boolean flag=ms.addBGMes(me);
 		if(flag){
 			if(me.getMesIsPass().equals("普通")){
@@ -82,7 +81,7 @@ public class MesAction extends ActionSupport implements SessionAware{
 		me.setMesDate(mesDate);
 		boolean flag=ms.addMes(me);
 		if(flag){
-			return SUCCESS;
+			return "laigao";
 		}else{
 			return "fail";
 		}
@@ -112,7 +111,6 @@ public class MesAction extends ActionSupport implements SessionAware{
 		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
 		Date mesDate=df.parse(df.format(new Date()));
 		me.setMesDate(mesDate);
-		System.out.println(me.getMesId()+"  "+me.getMesGrade()+" "+me.getMesIsPass()+" "+me.getMesName());
 		boolean flag=ms.updateMes(me);
 		if(flag){
 			if(me.getMesIsPass().equals("普通")){
@@ -133,7 +131,6 @@ public class MesAction extends ActionSupport implements SessionAware{
 	public String queryMes()throws Exception{
 		int meId=Integer.parseInt(mesId);
 		MessageEntity me=ms.queryMesBycondition(meId);
-//			System.out.println(neId+"---------------"+ne.getNewsId()+"------"+ne.getNewsTheme()+"------"+ne.getNewsDate());
 			session.put("me", me);
 			return "bianji";
 	}

@@ -86,6 +86,7 @@ public class NewsDaoimpl implements NewsDao{
 					nt.setNewsDate(newsDate);
 					list.add(nt);
 				}
+				rs.close();
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -148,7 +149,7 @@ public class NewsDaoimpl implements NewsDao{
 				Date newsDate=rs.getDate(4);
 				nt.setNewsDate(newsDate);
 			}
-				
+				rs.close();
 			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -163,11 +164,6 @@ public class NewsDaoimpl implements NewsDao{
 		}
 		return nt;
 	}
-//	public static void main(String[] args) {
-//		NewsDao n=new NewsDaoimpl();
-//		boolean flag=n.deleteNews(14);
-//		System.out.println(flag);
-//	}
 
 	@Override
 	public ArrayList<NewsEntity> indexQuery() {

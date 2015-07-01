@@ -88,6 +88,7 @@ public class ActDaoImpl implements ActDao{
 				at.setActPic1(rs.getString(5));
 				list.add(at);
 			}
+			rs.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -150,7 +151,7 @@ public class ActDaoImpl implements ActDao{
 				ae.setActDate(actDate);
 				ae.setActPic1(rs.getString(5));
 			}
-				
+				rs.close();
 			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -183,6 +184,7 @@ public class ActDaoImpl implements ActDao{
 				at.setActPic1(rs.getString(5));
 				list.add(at);
 			}
+			rs.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

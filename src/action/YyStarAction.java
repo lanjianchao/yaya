@@ -55,7 +55,7 @@ public class YyStarAction extends ActionSupport implements SessionAware{
 		boolean flag=ys.addYyStar(ye);
 		String type=ye.getYyType();
 		if(flag){
-			if(type=="作文"){
+			if(type.equals("作文")){
 				return "zuowen";
 			}else{
 				return "math";
@@ -85,7 +85,6 @@ public class YyStarAction extends ActionSupport implements SessionAware{
 			if(type.equals("作文")){	
 				return "zuowen";
 			}else{
-				System.out.println(type);
 				return "math";
 			}
 			
@@ -95,7 +94,6 @@ public class YyStarAction extends ActionSupport implements SessionAware{
 	}
 	public String deleteMes()throws Exception{
 		int yId=Integer.parseInt(yyId);
-		System.out.println(yId);
 		YyStarEntity y=ys.queryYystarBycondition(yId);
 		boolean flag=ys.deleteYyStar(yId);
 		if(flag){

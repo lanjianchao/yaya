@@ -45,7 +45,7 @@
             <div class="nav">
                 <ul>
                     <li class="c6">
-                        <a href="baoming.html">
+                        <a href="baoming.jsp">
                             Contact
                             <br/>
                             <strong>我要报名</strong>
@@ -162,10 +162,8 @@ showPage=pageCount;
 int posion=(showPage-1)*pageSize*2+1;
 //设置游标的位置
 rs.absolute(posion);
-System.out.println("游标位置："+posion);
  
  if(showPage*pageSize*2>recordCount)   {num=((pageSize*2-(showPage*pageSize*2-recordCount))%2)==0?((pageSize*2-(showPage*pageSize*2-recordCount))/2):((pageSize*2-(showPage*pageSize*2-recordCount))/2+1); }
-System.out.println(recordCount+"----------------"+num+"--------------"+showPage);
 for(int i=1;i<=num;i++){ 
 %>
                 <div class="section group staff">
@@ -217,8 +215,8 @@ catch(Exception e){e.printStackTrace(); }%>
 
 <div id="fenye" class="plist" style="margin-top:6px;text-align:right;">
                     共 <%=pageCount %>页 | 第<%=showPage %>页
-               <a href="activity.jsp?showPage=1">[首页</a> | <a href="activity.jsp?showPage=<%=showPage-1 %>" >上一页</a> | <a href="activity.jsp?showPage=<%=showPage+1 %>" >下一页</a> | <a href="activity.jsp?showPage=<%=pageCount %>" >末页</a>] 转至
-               <form action="activity.jsp">
+               <a href="star.jsp?showPage=1">[首页</a> | <a href="star.jsp?showPage=<%=showPage-1 %>" >上一页</a> | <a href="star.jsp?showPage=<%=showPage+1 %>" >下一页</a> | <a href="star.jsp?showPage=<%=pageCount %>" >末页</a>] 转至
+               <form action="star.jsp">
                 <input name="showPage" type="text" size="4">&nbsp;<button id="go" name="go" type="submit">go</button>
                 </form>
                     </div>    

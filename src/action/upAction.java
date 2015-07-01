@@ -120,7 +120,6 @@ public class upAction  extends ActionSupport implements SessionAware{
 		ArrayList<ActEntity>aeList=as.indexQuery();
 		session.put("actIndex", aeList);
 		ArrayList<MessageEntity>meList=ms.goodMessage();
-		System.out.println(meList.get(0).getMesName());
 		session.put("mesIndex", meList);
 		return SUCCESS;
 	}

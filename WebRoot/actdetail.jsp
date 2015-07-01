@@ -47,7 +47,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <div class="nav">
                 <ul>
                     <li class="c6">
-                        <a href="baoming.html">
+                        <a href="baoming.jsp">
                             Contact
                             <br/>
                             <strong>我要报名</strong>
@@ -61,7 +61,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                         </a>
                     </li>
                     <li class="c2">
-                        <a href="all_passage.html">
+                        <a href="all_passage.jsp">
                             Essay
                             <br/>
                             <strong>作文专区</strong>
@@ -69,7 +69,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     </li>
 
                     <li class="c3">
-                        <a href="news.html">
+                        <a href="news.jsp">
                             Training
                             <br/>
                             <strong>丫雅培训</strong>
@@ -77,7 +77,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     </li>
 
                     <li class="c4">
-                        <a href="staff.html">
+                        <a href="staff.jsp">
                             Teacher
                             <br/>
                             <strong>教师风采</strong>
@@ -115,9 +115,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <div class="teacher">
 
 
-     <h3 class="articletitle" name="ne.newsTheme"><s:property value="#session.ne.newsTheme"/></h3>
-      <div class="articleinfo"　name="ne.newsDate">来源：本站原创　　发布于：20<s:property value="#session.ne.newsDate"/></div>
-      <div class="txtcontent" name="ne.newsContent"><s:property escape="false" value="#session.ne.newsContent"/></div>
+     <h3 class="articletitle" name="ae.actTheme"><s:property value="#session.ae.actTheme"/></h3>
+      <div class="articleinfo"　name="ae.actDate">来源：本站原创　　发布于：20<s:property value="#session.ae.actDate"/></div>
+      <div class="txtcontent" name="ae.actContent"><s:property escape="false" value="#session.ae.actContent"/></div>
   </div>
      </div>
 

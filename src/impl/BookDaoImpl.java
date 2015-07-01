@@ -29,7 +29,6 @@ public class BookDaoImpl implements BookDao{
 			pstmt.setString(4, bt.getBookWriter());
 			pstmt.setInt(5, bt.getBookId());
 			int i=pstmt.executeUpdate();
-			System.out.println(i+"---------------------------------------11111111111111");
 			if(i>0){
 				flag=true;
 			}
@@ -61,6 +60,7 @@ public class BookDaoImpl implements BookDao{
 				bt.setBookWriter(rs.getString(5));
 				list.add(bt);
 			}
+			rs.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -91,6 +91,7 @@ public class BookDaoImpl implements BookDao{
 				be.setBookPic(rs.getString(4));
 				be.setBookWriter(rs.getString(5));
 			}
+			rs.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

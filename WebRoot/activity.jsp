@@ -48,7 +48,7 @@ String path = request.getContextPath();
             <div class="nav">
                 <ul>
                     <li class="c6">
-                        <a href="baoming.html">
+                        <a href="baoming.jsp">
                             Contact
                             <br/>
                             <strong>我要报名</strong>
@@ -166,45 +166,39 @@ showPage=pageCount;
 int posion=(showPage-1)*pageSize*2+1;
 //设置游标的位置
 rs.absolute(posion);
-System.out.println("游标位置："+posion);
  
  if(showPage*pageSize*2>recordCount)   {num=((pageSize*2-(showPage*pageSize*2-recordCount))%2)==0?((pageSize*2-(showPage*pageSize*2-recordCount))/2):((pageSize*2-(showPage*pageSize*2-recordCount))/2+1); }
-System.out.println(recordCount+"----------------"+num+"--------------"+showPage);
 for(int i=1;i<=num;i++){ 
 %>
 				
-                      <div class="section group staff">
-                    <div class="listview_1_of_2 images_1_of_2">
-                        <div class="listimg listimg_2_of_1">
+                      <div class="activity">
+                    <div class="listview_activity">
+                        <div class="pic_activity">
                             <img src="<%=rs.getString(5) %>">
                         </div>
-                        <div class="txt_s list_2_of_1">
-                            <h3><%=rs.getString(2) %></h3>
-                           <pre> <p><%=rs.getString(3)%>      </p></pre>
-
-                        </div>
+                        <div class="list_activity">
+                            <p><a href="actQuery.action?actId=<%=rs.getString(1) %>" ><%=rs.getString(2) %></a></p>
+                           </div>
                     </div>
                     
                     <%if(rs.next()){ %>
-                    <div class="listview_1_of_2 images_1_of_2">
-                        <div class="listimg listimg_2_of_1">
+                     <div class="listview_activity">
+                        <div class="pic_activity">
                             <img src="<%=rs.getString(5) %>">
                         </div>
-                        <div class="txt_s list_2_of_1">
-                            <h3><%=rs.getString(2) %></h3>
-                          <pre> <p><%=rs.getString(3)%>        ..</p></pre>
-                        </div>
+                        <div class="list_activity">
+                            <p><a href="#"><%=rs.getString(2) %></a></p>
+                           </div>
                     </div>
                     <% }else {%>
                     
-                    <div class="listview_1_of_2 images_1_of_2">
-                        <div class="listimg listimg_2_of_1">
-                            <img src="">
+                    <div class="listview_activity">
+                        <div class="pic_activity">
+                     
                         </div>
-                        <div class="txt_s list_2_of_1">
-                            <h3></h3>
-                          <pre> </pre>
-                        </div>
+                        <div class="list_activity">
+                            <p></p>
+                           </div>
                     </div>
                     <%} %>
                 </div>
@@ -221,7 +215,7 @@ rs.close();
 con.close();
 }
 }
-catch(Exception e){e.printStackTrace(); }%>      
+catch(Exception e){e.printStackTrace(); }%>    
 
 
                      

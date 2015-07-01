@@ -6,7 +6,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>xxxx作文培训机构</title>
+    <title>丫雅教育</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href='http://fonts.googleapis.com/css?family=Pompiere' rel='stylesheet' type='text/css'>
@@ -39,12 +39,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <div class="wrap">
 	<div class="header">
 		<div class="logo">
-		  	 <a href="index.html"><img src="./images/logo.jpg"> </a>
+		  	 <a href="index.jsp"><img src="./images/logo.jpg"> </a>
 		 </div>
         <div class="nav">
             <ul>
                 <li class="c6">
-                    <a href="baoming.html">
+                    <a href="baoming.jsp">
                         Contact
                         <br/>
                         <strong>我要报名</strong>
